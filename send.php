@@ -21,14 +21,11 @@ if (isset($_POST["send"])) {
         $resultado = mysqli_query($conex, $consulta);
 
         if ($resultado) {
-            // Si la consulta fue exitosa
             echo "<h3 class='success'>Tu registro se hizo correctamente</h3>";
         } else {
-            // Si la consulta falló
             echo "<h3 class='error'>Tu registro ha fallado: " . mysqli_error($conex) . "</h3>";
         }
     } else {
-        // Si no se han completado todos los campos
         echo "<h3 class='error'>Llena todos los campos correctamente.</h3>";
     }
 }

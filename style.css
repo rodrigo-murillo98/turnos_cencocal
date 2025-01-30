@@ -14,3 +14,13 @@ td {
 th {
   background-color: rgba(225, 222, 222, 0.99);
 }
+
+ .lista{
+  width: 100%;
+
+}
+
+option{
+  text-align: center;
+  color: black;
+}
